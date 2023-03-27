@@ -39,7 +39,7 @@ int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
 
-// Print Functions :
+
 int print_char(va_list types, char buffer[],
         int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[],
@@ -69,13 +69,13 @@ int print_reverse(va_list types, char buffer[],
 int print_rot13string(va_list types, char buffer[],
         int flags, int width, int precision, int size);
 
-// Get Functions :
+
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 
-// Write Functions :
+
 int handle_write_char(char c, char buffer[],
         int flags, int width, int precision, int size);
 int write_number(int is_positive, int ind, char buffer[],
@@ -87,7 +87,7 @@ int write_pointer(char buffer[], int ind, int length,
 int write_unsgnd(int is_negative, int ind, char buffer[],
         int flags, int width, int precision, int size);
 
-// Utils
+
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
